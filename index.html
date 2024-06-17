@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MoralesWeb</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+  <title>Portafolio Elisa</title>
+</head>
+<body>
+  <header class="header">
+    <div class="u-wrapper">
+      <div class="header-content">
+        <img height="40" src="images/no-te-rindas.png" alt="">
+        <buttton class="btn primary">About Me</buttton>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="u-wrapper">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="images/Me1.png" alt="">
+        </div>
+        <div class="hero-description">
+          <h1 class="h1">
+            <span class="h3">Hi,</span>
+            <span>I'm Cyrel Jave M. Morales</span>
+            <span>BSIT-1B Student</span>
+          </h1>
+          <p>A Frontend Developer who loves implementing designs that inspire and attract people. </p>
+          <div class="social">
+            <i class="social-item">
+              <img src="images/icons/phone.svg" alt="">
+            </i>
+            <i class="social-item">
+              <img src="images/icons/envelope.svg" alt="">
+            </i>
+            <i class="social-item">
+              <img src="images/icons/instagram.svg" alt="">
+            </i>
+            <i class="social-item">
+              <img src="images/icons/twitter.svg" alt="">
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pre-projects">
+    <div class="u-wrapper">
+      <div class="pre-projects-content">
+        <p>
+          Throughout my career as a BSIT Student, I have had the privilege of working on challenging and incredible projects.</p>
+        <p >Here are a few that I would like to share.
+        </p>
+        <img src="images/icons/arrow-down.svg" alt="">
+      </div>
+    <style>
+      img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+    </style>
+      <img src="images/about me.png" alt="">
+          <h1>My Projects</h1>
+          <h3 class="tag"><span>First Semester</span></h3>
+          <h2>"PERSONAL PORTFOLIO"</h2>
+          <h3>SS111- UNDERSTANDING THE SELF</h3>
+          <img src="images/port.jpg" alt="">
+          <h2>"CRY OF BALINTAWAK"</h2>
+          <h3>SS112-READING THE PHILIPPINE HISTORY</h3>
+          <img src="images/cry.JPG" alt="">
+          <h2>"UROM"</h2>
+          <h3>IT111-Introduction to Computing</h3>
+          <img src="images/urom.jpg" alt="">
+          <h2>"Student Information Management System"</h2>
+          <h3>IT112 CRUD Presentation and Propasal</h3>
+          <img src="images/java.jpg" alt="">
+          <h3 class="tag"><span>Second Semester</span></h3>
+          <h2>"I'm Better When I'm Dancin"</h2>
+          <h3>SS123-ART APPRECIATION</h3>
+          <img src="images/arts.JPG" alt="">
+          <h2>Graphic User Interface(GUI)</h2>
+          <h3>IT121-Computer Programming 2</h3>
+          <img src="images/gunshop.JPG" alt="">
+          <h2>Website Final Presentation (CRUD)</h2>
+          <h3>WebTech</h3>
+          <img src="images/web.JPG" alt="">
+          <h2>"DNSC Shop Management System"-Final CRUD</h2>
+          <h3>IT121-Computer Programming 2</h3>
+          <img src="images/dsms.JPG" alt="">
+
+    </div>
+  
+
+  <section class="contact">
+    <div class="u-wrapper">
+      <div class="contact-content">
+
+        <form id="form" action="" class="form">
+          <h3 class="tag"><span>LET'S TALK?</span></h3>
+          <label for="name">Full Name <span>*</span></label>
+          <input name="name" required type="text" id="name" placeholder="Juan">
+          <label for="email">Email Address <span>*</span></label>
+          <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+          <button type="submit" class="btn primary full">submit</button>
+        </form>
+        <a href="mailto:me@leonidasesteban.com" id="trucazo">jojojoj</a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="social">
+      <i class="social-item">
+        <img src="images/icons/phone.svg" alt="">
+      </i>
+      <i class="social-item">
+        <img src="images/icons/envelope.svg" alt="">
+      </i>
+      <i class="social-item">
+        <img src="images/icons/instagram.svg" alt="">
+      </i>
+      <i class="social-item">
+        <img src="images/icons/twitter.svg" alt="">
+      </i>
+    </div>
+    <p class="footer-message">
+      I MISS YOU!!!
+    </p>
+    <p class="footer-copyright">
+      Copyright 2024- For Clearance Purposes Only.
+    </p>
+
+  </footer>
+  <script>
+    const $form = document.querySelector('#form')
+    $form.addEventListener('submit', handleSubmit)
+    function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      trucazo.setAttribute('href', `mailto:me@leonidasesteban.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
+      trucazo.click()
+    }
+  </script>
+
+</body>
+</html>
